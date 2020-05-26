@@ -1,0 +1,53 @@
+vi 편집기 빠져나오는 명령어
+
+
+:wq  - 내가 작성한 내용을 저장하고 종료한다.
+:wq!  - 내가 작성한 내용을 저장하고 종료한다.
+
+:w - save하기, 끝나지 않는다
+:q - 빠져나옴, 고치지 않았을 때
+
+rebase
+1. 원격저장소 다른 분들이 pull을 안받고
+2. 이 저장소는 나만 작업하는 경우
+3. diff 개발자한테 전달X
+4. push 이전
+
+git rebase 
+git commit -- amend
+
+
+
+git status
+
+로컬 커밋
+git commit
+
+vi 편집기 사용하지 않고 커밋하기
+git commit -m '커밋로그'
+
+원격 마스터 브랜치에 푸시
+git push origin master
+
+추적중이지 않은 파일까지 stage에 올리기
+git add -A
+
+추적중인 파일 중에 변경된 파일 stage에 올리기
+git add *
+
+커밋 로그
+git log --oneline
+
+커밋 로그 그래프로
+git log --oneline --graph
+
+diff 비교
+git diff 해쉬번호 / 해쉬번호
+
+
+브랜치 목록 보는거
+git branch
+
+git branch mybranch
+
+git merge mybranch
